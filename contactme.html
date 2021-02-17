@@ -14,6 +14,10 @@ body,html {
   line-height: 1.8;
 }
 
+.nav {
+  font-size: 15px;
+}
+
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
@@ -28,12 +32,6 @@ body,html {
   height: 80%;
 }
 
-/* Second Image (I'm good at) */
-.bgimg-2 {
-  background-image: url('sf2.jpg');
-  height: 80%;
-  width: 100%;
-}
 
 /* Third image (Contact) */
 .bgimg-3 {
@@ -43,7 +41,8 @@ body,html {
 
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
-  
+.sticky { position: fixed;}
+
 /*Media Query */
 @media only screen and (max-width: 650px) {
   .Social-Media {
@@ -51,24 +50,42 @@ body,html {
   }
 }
 
+@media only screen and (max-width: 550px) {
+  .Social-Media {
+    margin-left: -20%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .Social-Media {
+    margin-left: -5%;
+  }
+
+/*S10 Plus */
+@media only screen and (min-width: 412px) and (max-width: 767px) {
+  .bgimg-1 {
+    height: 70%;
+    }
+  }
+  .Social-Media {
+    margin-left: -15%;
+    }
+  }
+
+
+  
+
+
 </style>
 <body style="background-color:#191B1C;">
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"></a>
-    <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
-    <a href="index.html#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="contactme.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="blog.html" class="w3-bar-item w3-button"><i class="fa fa-newspaper-o"></i> BLOG</a>
-    </a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium"> 
-    <a href="blog.html" class="w3-bar-item" onclick="toggleFunction()"><i class="fa fa-newspaper-o"></i> BLOG</a>
-  </div>
+<div class="nav">
+<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hide-small" href="javascript:void(0);"></a>
+<a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
+<a href="contactme.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+<a href="blog.html" class="w3-bar-item w3-button"><i class="fa fa-newspaper-o"></i> BLOG</a>
+</a>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
@@ -110,19 +127,11 @@ body,html {
   </div>
 </div>
 
-<style>
-@media(max-width: 600px) {
-  div.insta {
-      position: sticky;
-      left: 260px;
-  }
-}
-</style>
 
 <!--Social Media-->
-<div class="w3-hide-small w3-hide-medium">
-    <div class="Social-Media" style="width: 100%; margin-bottom: 20px;">
-      <a href="https://twitter.com/bobmyers" target="blank" style="margin-left: 43%;">
+<div class=>
+    <div class="Social-Media w3-show" style="width: 100%; margin-bottom: 20px;">
+      <a href="https://twitter.com/lancem69" target="blank" style="margin-left: 43%;">
           <img src="icons8-twitter-48.png" alt="Twitter" style="width: auto; height: auto;">
       </a>
       <a href="https://www.facebook.com/lance.ma" target="blank" style="margin-left: 5px;">
@@ -144,7 +153,7 @@ body,html {
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
   </div>
-  &copy; Copyright 2021 lancema.me
+  &copy; Copyright 2021 Lance Ma. All Rights Reserved
 </footer>
  
 <script>
