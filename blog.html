@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Lance's Blog</title>
+<title>Blog</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -38,7 +38,7 @@ body, html {
   .bgimg-1 {
     height: 70%;
     }
-  }  
+  }
 </style>
 
 <body style="background-color: #191B1C;">
@@ -52,21 +52,37 @@ body, html {
 </a>
 </div>
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
-    <a href="index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">HOME</a>
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Blog
   </div>
 </div>
+</div>
 
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-    <div class="w3-display-middle" style="white-space:nowrap;">
-      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Blog
+<!-- Container (Articles Section) -->
+<h3 style="text-align: left; margin-left: 100px; padding-top: 30px;">Latest Posts<h3>
+
+<div id="container" style="background-color:black; margin: 40px 40px 80px 100px; width: 400px; height: 480px;">
+    <div id="image" style="margin-top: 20px;">
+      <a href="applyingtocollege.html">
+      <img src="college.jpg" style="width: 390px; height: 250px; position: relative; left: 0px;">
+      </a>
     </div>
+    <h3 style="text-align: center; margin-top: 20px;"><a href=applyingtocollege.html> Five Tips for Applying To College</h3></a>
+    <p style="font-size: 15px; margin-top: 20px; margin-left: 10px; margin-right: 5px;">So you're a current high school junior or a rising high school senior looking to apply to colleges in the fall.
+      Here's some of my best tips for applying to colleges during a pandemic from a high school senior...</p>
+</div>
+</div>
+</div>
+</h3>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-margin-80 w3-padding-64 width: 100%">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-small w3-section">
   </div>
-
-<!-- Container (Watched Section) -->
-<h3 style="text-align: center; padding-top: 30px;">Work In Progress. Check Back Later.<h3>
-
+  &copy; Copyright 2021 Lance Ma. All Rights Reserved.
+</footer>
 
 </body>
 </html>
