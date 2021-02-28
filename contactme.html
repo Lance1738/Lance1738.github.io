@@ -19,7 +19,7 @@ body,html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -28,20 +28,10 @@ body,html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('bos.jpg');
+  background-image: url('images/boston.jpg');
   height: 80%;
 }
 
-
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("/w3images/parallax3.jpg");
-  min-height: 400px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-.sticky { position: fixed;}
 
 /*Media Query */
 @media only screen and (max-width: 650px) {
@@ -71,10 +61,6 @@ body,html {
     margin-left: -15%;
     }
   }
-
-
-  
-
 
 </style>
 <body style="background-color:#191B1C;">
@@ -129,19 +115,19 @@ body,html {
 
 
 <!--Social Media-->
-<div class=>
+<div class="socialmedia">
     <div class="Social-Media w3-show" style="width: 100%; margin-bottom: 20px;">
       <a href="https://twitter.com/lancem69" target="blank" style="margin-left: 43%;">
-          <img src="icons8-twitter-48.png" alt="Twitter" style="width: auto; height: auto;">
+          <img src="images/twitter.png" alt="Twitter" style="width: auto; height: auto;">
       </a>
       <a href="https://www.facebook.com/lance.ma" target="blank" style="margin-left: 5px;">
-        <img src="icons8-facebook-48.png" alt="Facebook" style="width: auto; height: auto">
+        <img src="images/facebook.png" alt="Facebook" style="width: auto; height: auto">
         </a>
         <a href="https://www.instagram.com/1ance_ma/" target="blank" style="margin-left: 5px;">
-          <img src="icons8-instagram-48.png" alt="Instagram" style="width: auto; height: auto;">
+          <img src="images/instagram.png" alt="Instagram" style="width: auto; height: auto;">
           </a>
           <a href="https://www.linkedin.com/in/lance-ma-1655081ba/" target="blank" style="margin-left: 5px;">
-            <img src="iconfinder_square-linkedin_317725.png" alt="Linkden" style="width: 38px; height: 38px;">
+            <img src="images/linkedin.png" alt="Linkden" style="width: 38px; height: 38px;">
           </a>
     </div>
     </div>
@@ -150,37 +136,11 @@ body,html {
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-margin-80 w3-padding-64 w3-opacity">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
+  <a href="#home" class="w3-button w3-white"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-small w3-section">
   </div>
   &copy; Copyright 2021 Lance Ma. All Rights Reserved
 </footer>
- 
-<script>
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-black", "");
-    }
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
-
-
 
 </body>
 </html>

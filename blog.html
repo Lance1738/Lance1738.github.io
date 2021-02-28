@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
+
+<head>
 <title>Blog</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
@@ -20,7 +23,7 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -29,7 +32,7 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('nyc.jpg');
+  background-image: url('images/nyc.jpg');
   height: 80%;
 }
 
@@ -39,6 +42,118 @@ body, html {
     height: 70%;
     }
   }
+
+/*Test Media */
+body {
+  background: #fefefe;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 87.75%;
+  margin: 50px auto;
+  margin-top: 0px;
+}
+.heading {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.card {
+  width: 30%;
+  background: #fff;
+  margin-bottom: 50px;
+  position: left;
+}
+
+.image {
+  max-width: 100%;
+  padding-right: 0px;
+  height: auto;
+  object-fit: contain;
+}
+
+.card-body {
+  padding: 30px 10px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.card-body .btn {
+  display: block;
+  color: #fff;
+  text-align: center;
+  background: black;
+  margin-top: 30px;
+  text-decoration: none;
+  padding: 10px 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .heading {
+    padding: 20px;
+    font-size: 20px;
+    text-align: auto;
+  }
+
+  .card {
+    width: 70%;
+    position: sticky;
+  }
+  .image {
+    max-width: 100%;
+    overflow: hidden;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 620px) {
+
+  .heading {
+    padding: 20px;
+    font-size: 20px;
+    text-align: auto;
+  }
+
+  .card {
+    width: 70%;
+    position: sticky;
+  }
+  .image {
+    max-width: 100%;
+    overflow: hidden;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+.heading {
+  padding: 20px;
+  font-size: 20px;
+  text-align: auto;
+}
+
+.card {
+  width: 80%;
+  position: sticky;
+}
+.image {
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+}
+}
+
 </style>
 
 <body style="background-color: #191B1C;">
@@ -60,29 +175,35 @@ body, html {
 </div>
 </div>
 
-<!-- Container (Articles Section) -->
-<h3 style="text-align: left; margin-left: 100px; padding-top: 30px;">Latest Posts<h3>
-
-<div id="container" style="background-color:black; margin: 40px 40px 80px 100px; width: 400px; height: 480px;">
-    <div id="image" style="margin-top: 20px;">
-      <a href="applyingtocollege.html">
-      <img src="college.jpg" style="width: 400px; height: 250px; position: relative; left: 0px;">
-      </a>
+<!-- First Card -->
+<div class="container">
+  <div class="heading">
+    <h1>Latest Posts</h1>
+  </div>
+  <div class="row">
+    <div class="card">
+      <div class="image">
+        <img src="images/college.jpg">
+      </div>
+      <div class="card-body">
+        <p>
+          So you're a current high school junior or a rising high school senior looking to apply to colleges in the fall. Here's some of my best tips for applying to colleges during a pandemic from a high school senior.
+        </p>
+        <a href="applyingtocollege.html" class="btn">Read more</a>
+      </div>
     </div>
-    <h3 style="text-align: center; margin-top: 20px;"><a href=applyingtocollege.html> Five Tips for Applying To College</h3></a>
-    <p style="font-size: 15px; margin-top: 20px; margin-left: 10px; margin-right: 5px;">So you're a current high school junior or a rising high school senior looking to apply to colleges in the fall.
-      Here's some of my best tips for applying to colleges during a pandemic from a high school senior...</p>
+  </div>
 </div>
-</div>
-</div>
-</h3>
+  
 <!-- Footer -->
 <footer class="w3-center w3-black w3-margin-80 w3-padding-64 w3-opacity">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-small w3-section">
   </div>
-  &copy; Copyright 2021 Lance Ma. All Rights Reserved.
+  &copy; Copyright 2021 Lance Ma. All Rights Reserved. 
 </footer>
 
+    
 </body>
+
 </html>
