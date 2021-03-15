@@ -50,7 +50,6 @@ body,html {
   flex-direction: row;
   justify-content: space-around;
   flex-flow: wrap;
-  height: 100%;
 }
 
 .card {
@@ -79,12 +78,6 @@ body,html {
 
 /* Media Query */
 @media screen and (max-width:620px) {
-  .row {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-flow: wrap;
-  }
   .card {
     width: 90%;
     height: auto;
@@ -93,11 +86,23 @@ body,html {
   .w3-button {
     padding-right: 5px;
   }
+  .row {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .card {
-    width: 40%;
+    width: 90%;
+    align-content: center;
+  }
+  .row {
+    flex-direction: column;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+  .bgimg-1 {
+    height: 70%;
   }
 
 @media only screen and (max-width: 480px) {
@@ -106,6 +111,26 @@ body,html {
 }
   .w3-button {
     padding: 8px 10px;
+  }
+  .row {
+    flex-direction: column;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+  .cardbody {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .nav {
+    font-size: 13px !important;
+  }
+  .w3-button {
+    padding: 8px 5px;
+  }
+  .heading {
+    font-size: 28px !important;
   }
 }
 }
@@ -143,7 +168,6 @@ body,html {
           <img class="image"src="images/rps.jpg">
           </a>
         </div>
-
       <div class="cardbody">
         <div class="title">
           <a href="https://replit.com/@LanceMa69/Rock-Paper-Scissors#RockPaperScissors.py" target=blank class="title">Rock Paper Scissors</a>
@@ -151,21 +175,21 @@ body,html {
       </div>
       </div>
     
-        <div class="card">
-            <div class="image">
-              <a href="https://replit.com/@LanceMa69/pythonProject#MadLibs.py" target=blank>
-              <img class="image"src="images/Mad_Libs_logo.jpg">
-              </a>
-            </div>
- 
-              <div class="cardbody">
-            <div class="title">
-              <a href="https://replit.com/@LanceMa69/pythonProject#MadLibs.py" target="blank" class="title">Mad Libs Game</a>
-            </div>
+      <div class="card">
+          <div class="image">
+            <a href="https://replit.com/@LanceMa69/pythonProject#MadLibs.py" target=blank>
+            <img class="image"src="images/Mad_Libs_logo.jpg">
+            </a>
           </div>
+          <div class="cardbody">
+          <div class="title">
+            <a href="https://replit.com/@LanceMa69/pythonProject#MadLibs.py" target="blank" class="title">Mad Libs Game</a>
+          </div>
+        </div>
       </div>
     </div>
 </div>  
+</div>
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-margin-80 w3-padding-64 w3-opacity">
