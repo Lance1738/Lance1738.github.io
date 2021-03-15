@@ -14,13 +14,23 @@ body,html {
   line-height: 1.8;
 
 }
- 
+/* Nav */
+
 .nav {
-  font-size: 16px !important;
+  font-size: 15px !important;
+}
+
+
+.header {
+  margin-bottom: 50px;
+  text-align: center;
+  margin-top: -20px;
+  font-weight: 400 !important;
+  font-size: 30px;
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -70,8 +80,16 @@ caption {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .nav {
+    font-size: 15px !important;
+}
+  .w3-button {
+    padding: 8px 10px;
+  }
+}
 
-/*S10 Plus */
+/*S10 Plus Media Query*/
 @media only screen and (min-width: 412px) and (max-width: 767px) {
   .bgimg-1 {
     height: 70%;
@@ -83,22 +101,21 @@ caption {
 <!-- Navbar (sit on top) -->
 <div class="nav">
 <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
+<a href="projects.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> PROJECTS</a>
 <a href="contactme.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
 <a href="blog.html" class="w3-bar-item w3-button"><i class="fa fa-newspaper-o"></i> BLOG</a>
-
 </div>
-
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Welcome
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Home
   </div>
 </div>
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center w3-margin-bottom">ABOUT ME</h3>
+  <h3 class="header">About Me</h3>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <p><b><i class="fa fa-user w3-margin-right"></i>Lance Ma</b></p><br>
