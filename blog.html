@@ -17,9 +17,6 @@ body, html {
   line-height: 1.8;
 }
 
-.nav {
-  font-size: 16px !important;
-}
 
 /* Create a Parallax Effect */
 .bgimg-1 {
@@ -42,7 +39,7 @@ body, html {
     }
   }
 
-/*Test Media */
+/*Style for Container */
 body {
   background: #fefefe;
 }
@@ -53,9 +50,11 @@ body {
   margin-top: 0px;
 }
 .heading {
-  text-align: center;
-  font-size: 30px;
   margin-bottom: 50px;
+  text-align: center;
+  font-weight: 400 !important;
+  font-size: 30px;
+  margin-top: 45px;
 }
 
 .row {
@@ -69,7 +68,6 @@ body {
   width: 30%;
   background: #fff;
   margin-bottom: 50px;
-  position: left;
 }
 
 .image {
@@ -94,7 +92,21 @@ body {
   text-decoration: none;
   padding: 10px 5px;
 }
+/* Media Query */
+@media screen and (max-width: 1000px) {
+  
+  .image {
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+  }
 
+  .card {
+    width: 50%;
+    overflow: hidden;
+  }
+
+}
 
 @media screen and (max-width: 768px) {
   .heading {
@@ -103,16 +115,18 @@ body {
     text-align: auto;
   }
 
-  .card {
-    width: 90%;
-    position: sticky;
-  }
   .image {
     max-width: 100%;
     overflow: hidden;
     height: auto;
   }
+
+  .card {
+    width: 90%;
+    position: sticky;
+  }
 }
+
 
 @media screen and (max-width: 620px) {
 
@@ -150,6 +164,12 @@ body {
   overflow: hidden;
   height: auto;
 }
+.nav {
+  font-size: 15px !important;
+}
+.w3-button {
+  padding: 8px 10px;
+  }
 }
 
 </style>
@@ -159,6 +179,7 @@ body {
 <!-- Navbar (sit on top) -->
 <div class="nav">
 <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
+<a href="projects.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> PROJECTS</a>
 <a href="contactme.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
 <a href="blog.html" class="w3-bar-item w3-button"><i class="fa fa-newspaper-o"></i> BLOG</a>
 </a>
@@ -174,9 +195,7 @@ body {
 
 <!-- First Card -->
 <div class="container">
-  <div class="heading">
-    <h1>Latest Posts</h1>
-  </div>
+  <h1 class="heading">Latest Posts</h1>
   <div class="row">
     <div class="card">
       <div class="image">
