@@ -1,1 +1,2 @@
-# Lance1738.github.io
+Code for my personal website. 
+lancema.me
