@@ -1,2 +1,1 @@
-Code for my personal website. 
-lancema.me
+Code for my old website
